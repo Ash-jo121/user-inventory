@@ -1,0 +1,28 @@
+@import "../../styles/variables.scss";
+
+.header {
+  background: $dark;
+  width: 100%;
+  height: $header-height;
+
+  @include breakpoint(md) {
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+  transition: 0.3s ease all;
+
+  &__content {
+    overflow: hidden;
+    color: $light;
+    display: flex;
+    height: 100%;
+    align-items: center;
+    max-width: 1920px;
+
+    &__nav {
+      align-items: flex-end;
+      margin-left: auto;
+      cursor: pointer;
+    }
+  }
+}

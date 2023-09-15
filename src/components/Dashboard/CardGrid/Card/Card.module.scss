@@ -1,0 +1,70 @@
+@import "../../../../styles/variables.scss";
+
+.box {
+  border: 1px solid $dark;
+  border-radius: 5px;
+  width: 100%;
+  height: $card-height;
+
+  &__cardHeader {
+    display: flex;
+    &__cardName {
+      display: block;
+      padding-left: 1rem;
+      padding-top: 0.5rem;
+      padding-bottom: 0.5rem;
+      width: 80%;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+    }
+    &__cardBadge {
+      align-items: flex-end;
+      margin-left: auto;
+      padding-right: 2rem;
+      padding-top: 0.8rem;
+
+      &__circle {
+        border-radius: 50%;
+        border-width: 4;
+        width: 1rem;
+        height: 1rem;
+      }
+    }
+  }
+
+  &__cardListSection {
+    padding-left: 1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+
+    &__cardList {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    &__cardValue {
+      font-weight: bold;
+      font-size: small;
+    }
+
+    &__textArea {
+      font-weight: bold;
+      font-size: small;
+      position: static;
+      display: block;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+    }
+  }
+
+  &__cardButtonSection {
+    margin-left: 3rem;
+    margin-top: 1rem;
+    display: grid;
+    grid-template-columns: 20% 20% 20%;
+    column-gap: 10%;
+  }
+}

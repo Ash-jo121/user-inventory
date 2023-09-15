@@ -1,0 +1,17 @@
+@import "../../../styles/variables.scss";
+
+.grid {
+  margin-left: 5rem;
+  margin-top: 2.5rem;
+  width: 100%;
+  display: grid;
+  max-width: 1920px;
+  grid-template-columns: 23% 23% 23%;
+  grid-template-rows: 60%;
+  grid-column-gap: 10%;
+
+  @include breakpoint-grid(sm) {
+    display: block;
+  }
+  transition: 0.3s ease all;
+}

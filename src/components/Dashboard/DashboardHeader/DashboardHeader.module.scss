@@ -1,0 +1,19 @@
+@import "../../../styles/variables.scss";
+
+.header {
+  width: 100%;
+  display: flex;
+  max-width: 1920px;
+  margin-top: 1%;
+
+  @include breakpoint(md) {
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+  transition: 0.3s ease all;
+
+  &__addButton {
+    align-items: flex-end;
+    margin-left: auto;
+  }
+}

@@ -1,0 +1,32 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+$Poppins: "Poppins", sans-serif;
+
+//colors
+$dark: rgb(94, 102, 115);
+$light: rgb(213, 221, 232);
+$bg: rgb(245, 247, 250);
+
+//spacing
+$spacing-md: 16px;
+$spacing-lg: 32px;
+
+//height
+$header-height: 60px;
+$card-height: 250px;
+
+@mixin breakpoint($point) {
+  @if $point == md {
+    @media (min-width: 48em) {
+      @content;
+    }
+  }
+}
+
+@mixin breakpoint-grid($point) {
+  @if $point == sm {
+    @media (max-width: 48em) {
+      @content;
+    }
+  }
+}
