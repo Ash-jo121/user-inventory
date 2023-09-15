@@ -24,7 +24,7 @@ const reducer = (state, action) => {
       const newList = [...state.userList];
       const existingItem = newList.find((item) => item.id === action.id);
       const idx = newList.indexOf(existingItem);
-      for (let j = idx + 1; j < newList.length; j++) {
+      for (let j = idx + 1; j < newList?.length; j++) {
         newList[j].id--;
       }
       newList.splice(idx, 1);

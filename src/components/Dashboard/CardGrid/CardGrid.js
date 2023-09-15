@@ -11,7 +11,9 @@ export default function CardGrid({
 }) {
   return (
     <div className={classes.grid}>
-      {records.length === 0 && <div>NO USERS PRESENT ! CLICK TO ADD USERS</div>}
+      {records?.length === 0 && (
+        <div>NO USERS PRESENT ! CLICK TO ADD USERS</div>
+      )}
       {records?.map((singleUser) => (
         <Card
           singleUser={singleUser}
