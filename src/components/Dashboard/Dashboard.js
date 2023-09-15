@@ -52,7 +52,7 @@ export default function Dashboard() {
         getUserId={getUserId}
         changeUserMode={changeUserMode}
         deleteUser={deleteUser}
-        records={state.userList.slice(
+        records={state.userList?.slice(
           usersPerPage * (pageNo - 1),
           usersPerPage * pageNo
         )}
