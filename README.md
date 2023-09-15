@@ -4,6 +4,6 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ##  Scripts
 
-### `cd user-inventory'
+### cd user-inventory
 ### `npm i`
 ### `npm start`
